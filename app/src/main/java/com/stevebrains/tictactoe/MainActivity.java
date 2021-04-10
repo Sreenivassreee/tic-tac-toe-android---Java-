@@ -114,24 +114,54 @@ boolean end=false;
         }
 
     }
-public void game(){
-        String b1,b2,b3,b4,b5,b6,b7,b8,b9;
-        b1= one.getText().toString();
-    b2= two.getText().toString();
-    b3= Three.getText().toString();
-    b4= Four.getText().toString();
-    b5= Five.getText().toString();
-    b6= Six.getText().toString();
-    b7= Seven.getText().toString();
-    b8= Eight.getText().toString();
-    b9= Nine.getText().toString();
-    if(!end){
-    if((b1.equals("X")&& b2.equals("X") && b3.equals("X")) || (b4.equals("X")&& b5.equals("X") && b6.equals("X")) || (b7.equals("X")&& b8.equals("X") && b9.equals("X"))){
-        end=true;
+public void game() {
+    String b1, b2, b3, b4, b5, b6, b7, b8, b9;
+    b1 = one.getText().toString();
+    b2 = two.getText().toString();
+    b3 = Three.getText().toString();
+    b4 = Four.getText().toString();
+    b5 = Five.getText().toString();
+    b6 = Six.getText().toString();
+    b7 = Seven.getText().toString();
+    b8 = Eight.getText().toString();
+    b9 = Nine.getText().toString();
+    if (!end) {
+
+        if ((b1.equals("X") && b2.equals("X") && b3.equals("X")) || (b4.equals("X") && b5.equals("X") && b6.equals("X")) || (b7.equals("X") && b8.equals("X") && b9.equals("X"))) {
+            end = true;
+            Toast.makeText(this, "X Win", Toast.LENGTH_SHORT).show();
+        } if ((b1.equals("X") && b4.equals("X") && b7.equals("X")) || (b2.equals("X") && b5.equals("X") && b8.equals("X")) || (b3.equals("X") && b6.equals("X") && b9.equals("X"))) {
+            end = true;
+            Toast.makeText(this, "X Win", Toast.LENGTH_SHORT).show();
+        }
+         if ((b1.equals("X") && b4.equals("X") && b7.equals("X")) || (b2.equals("X") && b5.equals("X") && b8.equals("X")) || (b3.equals("X") && b6.equals("X") && b9.equals("X"))) {
+            end = true;
+            Toast.makeText(this, "X Win", Toast.LENGTH_SHORT).show();
+        }
+
+          if ((b1.equals("X") && b5.equals("X") && b9.equals("X")) || (b3.equals("X") && b5.equals("X") && b7.equals("X"))) {
+        end = true;
         Toast.makeText(this, "X Win", Toast.LENGTH_SHORT).show();
     }
+         if ((b1.equals("O") && b2.equals("O") && b3.equals("O")) || (b4.equals("O") && b5.equals("O") && b6.equals("O")) || (b7.equals("O") && b8.equals("O") && b9.equals("O"))) {
+        end = true;
+        Toast.makeText(this, "O Win", Toast.LENGTH_SHORT).show();
+    }
+         if ((b1.equals("O") && b4.equals("O") && b7.equals("O")) || (b2.equals("O") && b5.equals("O") && b8.equals("O")) || (b3.equals("O") && b6.equals("O") && b9.equals("O"))) {
+        end = true;
+        Toast.makeText(this, "O Win", Toast.LENGTH_SHORT).show();
+    }
+         if ((b1.equals("O") && b4.equals("O") && b7.equals("O")) || (b2.equals("O") && b5.equals("O") && b8.equals("O")) || (b3.equals("O") && b6.equals("O") && b9.equals("O"))) {
+        end = true;
+        Toast.makeText(this, "O Win", Toast.LENGTH_SHORT).show();
+    }
+         if ((b1.equals("O") && b5.equals("O") && b9.equals("O")) || (b3.equals("O") && b5.equals("O") && b7.equals("O"))) {
+        end = true;
+        Toast.makeText(this, "O Win", Toast.LENGTH_SHORT).show();
     }
 
+
+}
 }
 
 }
